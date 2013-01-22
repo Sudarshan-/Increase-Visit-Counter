@@ -1,0 +1,25 @@
+{
+    "name": "Iframe",
+    "description": "",
+    "version": "1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "http://allofrgb.blogspot.in/*"
+            ],
+            "js": [
+                "myscript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "http://allofrgb.blogspot.in/*",
+        "tabs"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
